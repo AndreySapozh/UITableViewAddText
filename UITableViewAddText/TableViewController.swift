@@ -9,15 +9,12 @@ import UIKit
 
 class TableViewController: UITableViewController {
     
-//    var objects = [Text(text: "output text")]
     var objects = [Text]()
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        self.title = "Add text app"
-
     }
     @IBAction func unwindSegue(segue:UIStoryboardSegue) {
         guard segue.identifier == "saveSegue" else { return }
